@@ -115,10 +115,10 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1: Large (Capital that grows) */}
           <motion.div
-            initial={{ opacity: 0, y: 0 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.3 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "200px" }}
+            transition={{ duration: 0.8 }}
             className="md:col-span-2 relative group rounded-[40px] overflow-hidden bg-[#161616] border border-white/5 h-[450px] md:h-[700px]"
           >
             <div className="absolute inset-0">
@@ -150,10 +150,10 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             {/* Card 2: Small */}
             <motion.div
-              initial={{ opacity: 0, y: 0 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "200px" }}
+              transition={{ duration: 0.8, delay: 0.1 }}
               className="flex-1 bg-[#121212] border border-white/5 p-8 md:p-10 rounded-[40px] flex flex-col justify-between hover:bg-[#1A1A1A] transition-all duration-300 group"
             >
               <h3 className="text-2xl font-bold text-white leading-tight">
@@ -166,10 +166,10 @@ export default function Home() {
 
             {/* Card 3: Small */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "200px" }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="flex-1 bg-[#121212] border border-white/5 p-8 md:p-10 rounded-[40px] flex flex-col justify-between hover:bg-[#1A1A1A] transition-all duration-300 group"
             >
               <h3 className="text-2xl font-bold text-white leading-tight">
