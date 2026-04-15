@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0D0D0D] selection:bg-white/10 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="flex flex-col items-center pt-36 md:pt-64 px-6 mb-24">
+      <section className="flex flex-col items-center pt-28 md:pt-64 px-6 mb-24">
         <AskAiBadge className="mb-12" />
 
         <motion.h1
@@ -72,7 +72,7 @@ export default function Home() {
       </section>
 
       {/* Identity Section */}
-      <section className="max-w-7xl mx-auto px-6 py-12 md:py-24">
+      <section className="max-w-7xl mx-auto px-6 py-8 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -183,8 +183,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Spacing for scroll demo */}
-      <div className="h-[20vh]" />
     </main>
   );
 }
