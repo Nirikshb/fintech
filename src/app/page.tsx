@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0D0D0D] selection:bg-white/10 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="flex flex-col items-center pt-36 md:pt-64 px-6 mb-32">
+      <section className="flex flex-col items-center pt-36 md:pt-64 px-6 mb-24">
         <AskAiBadge className="mb-12" />
 
         <motion.h1
@@ -72,7 +72,7 @@ export default function Home() {
       </section>
 
       {/* Identity Section */}
-      <section className="max-w-7xl mx-auto px-6 py-24 md:py-48">
+      <section className="max-w-7xl mx-auto px-6 py-12 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -111,14 +111,14 @@ export default function Home() {
       </section>
 
       {/* Feature Cards Grid */}
-      <section className="max-w-7xl mx-auto px-6 pb-48">
+      <section className="max-w-7xl mx-auto px-6 pt-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1: Large (Capital that grows) */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, margin: "-50px" }}
-            transition={{ duration: 0.6 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.3 }}
             className="md:col-span-2 relative group rounded-[40px] overflow-hidden bg-[#161616] border border-white/5 h-[450px] md:h-[700px]"
           >
             <div className="absolute inset-0">
@@ -130,7 +130,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/75 transition-colors duration-500" />
             </div>
-            
+
             <div className="relative h-full flex flex-col justify-between p-8 md:p-16">
               <h3 className="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
                 Capital that grows
@@ -150,10 +150,10 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             {/* Card 2: Small */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, margin: "-50px" }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: false, }}
+              transition={{ duration: 0.5, delay: 0.1 }}
               className="flex-1 bg-[#121212] border border-white/5 p-8 md:p-10 rounded-[40px] flex flex-col justify-between hover:bg-[#1A1A1A] transition-all duration-300 group"
             >
               <h3 className="text-2xl font-bold text-white leading-tight">
