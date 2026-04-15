@@ -117,7 +117,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, margin: "200px" }}
+            viewport={{ once: false, margin: "-50px" }}
             transition={{ duration: 0.8 }}
             className="md:col-span-2 relative group rounded-[40px] overflow-hidden bg-[#161616] border border-white/5 h-[450px] md:h-[700px]"
           >
@@ -152,9 +152,9 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true, margin: "200px" }}
+              viewport={{ once: false, margin: "-50px" }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="flex-1 bg-[#121212] border border-white/5 p-8 md:p-10 rounded-[40px] flex flex-col justify-between hover:bg-[#1A1A1A] transition-all duration-300 group"
+              className="flex-1 bg-[#121212] border border-white/5 p-8 md:p-10 rounded-[40px] flex flex-col justify-between hover:bg-[#1A1A1A] transition-colors duration-300 group"
             >
               <h3 className="text-2xl font-bold text-white leading-tight">
                 Systematic<br />Horizons
@@ -168,9 +168,9 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true, margin: "200px" }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex-1 bg-[#121212] border border-white/5 p-8 md:p-10 rounded-[40px] flex flex-col justify-between hover:bg-[#1A1A1A] transition-all duration-300 group"
+              viewport={{ once: false, margin: "-50px" }}
+              transition={{ duration: 0.8 }}
+              className="flex-1 bg-[#121212] border border-white/5 p-8 md:p-10 rounded-[40px] flex flex-col justify-between hover:bg-[#1A1A1A] transition-colors duration-300 group"
             >
               <h3 className="text-2xl font-bold text-white leading-tight">
                 Independent<br />Intelligence
