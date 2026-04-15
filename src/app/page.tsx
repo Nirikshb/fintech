@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* Feature Cards Grid */}
-      <section className="max-w-7xl mx-auto px-6 pt-24">
+      <section className="max-w-7xl mx-auto px-6 pt-24 mb-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1: Large (Capital that grows) */}
           <motion.div
