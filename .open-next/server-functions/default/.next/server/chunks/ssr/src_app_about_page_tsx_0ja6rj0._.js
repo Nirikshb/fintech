@@ -1,0 +1,3 @@
+module.exports=[3691,a=>{"use strict";var b=a.i(87924);a.s(["default",0,function(){return(0,b.jsxs)("main",{className:"min-h-screen bg-[#0D0D0D] pt-48 px-6 text-center text-white",children:[(0,b.jsx)("h1",{className:"text-6xl font-bold mb-8",children:"About Us"}),(0,b.jsx)("p",{className:"text-xl text-white/60 max-w-2xl mx-auto",children:"This is the about us page. The navbar here should expand to full width on scroll."}),(0,b.jsx)("div",{className:"h-[200vh]"})," "]})}])}];
+
+//# sourceMappingURL=src_app_about_page_tsx_0ja6rj0._.js.map

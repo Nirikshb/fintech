@@ -41,15 +41,15 @@ export function Navbar() {
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, ease: "easeIn" }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
         className={`
           pointer-events-auto
           relative flex items-center justify-between
           transition-all duration-500 ease-in-out
           w-full px-4 md:px-8
           ${(scrolled && shouldExpand)
-            ? 'max-w-full h-[64px] rounded-none border-b border-white/10 bg-[#0D0D0D] shadow-xl' 
-            : `max-w-[1200px] h-[64px] md:h-[72px] border-white/10 backdrop-blur-md shadow-2xl ${scrolled ? 'bg-[#0D0D0D]/95 rounded-b-[40px] rounded-t-none border-x border-b' : 'bg-[#0D0D0D]/80 rounded-[100px] border'}`
+            ? 'max-w-full h-[64px] rounded-none border-b border-white/10 bg-[#0D0D0D] shadow-xl'
+            : `max-w-[1400px] h-[64px] md:h-[72px] border-white/10 backdrop-blur-md shadow-2xl ${scrolled ? 'bg-[#0D0D0D]/95 rounded-b-[40px] rounded-t-none border-x border-b' : 'bg-[#0D0D0D]/80 rounded-[100px] border'}`
           }
         `}
       >
@@ -79,13 +79,14 @@ export function Navbar() {
 
         {/* Logo Middle (Desktop) / Left (Mobile) */}
         <div className="flex justify-center lg:flex-1">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center w-[150px] md:w-[200px] lg:w-[250px]">
             <Image
               src="/grey-logo.webp"
               alt="GreyOak Logo"
-              width={200}
-              height={80}
-              className="object-contain"
+              width={500}
+              height={200}
+              className="object-contain w-full h-auto"
+              priority
             />
           </Link>
         </div>

@@ -14,11 +14,11 @@ export function AskAiBadge({ href = "/ai", className = "" }: AskAiBadgeProps) {
   return (
     <Link href={href} className={`inline-block group ${className}`}>
       <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2, ease: "easeIn" }}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
         className="
           flex items-center gap-3 p-1 overflow-hidden
           bg-white/5 border border-white/10 rounded-full
