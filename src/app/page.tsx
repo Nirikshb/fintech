@@ -6,6 +6,7 @@ import Image from "next/image";
 import { AskAiBadge } from "@/components/ask-ai-badge";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { ChevronRight } from "lucide-react";
+import { PricingSection } from "@/components/pricing-section";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -25,7 +26,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0D0D0D] selection:bg-white/10 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="flex flex-col items-center pt-28 md:pt-64 px-6 mb-24">
+      <section className="flex flex-col items-center pt-28 md:pt-64 px-6 md:mb-24">
         <AskAiBadge className="mb-12" />
 
         <motion.h1
@@ -111,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* Feature Cards Grid */}
-      <section className="max-w-7xl mx-auto px-6 pt-24 mb-16">
+      <section className="max-w-7xl mx-auto px-6 pt-14 mb-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1: Large (Capital that grows) */}
           <motion.div
@@ -182,6 +183,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Pricing Section */}
+      <PricingSection />
 
     </main>
   );
